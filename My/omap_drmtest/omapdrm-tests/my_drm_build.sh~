@@ -1,0 +1,14 @@
+
+export PATH=/home/user/gcc-linaro-arm-linux-gnueabihf-4.7-2013.03-20130313_linux/bin:$PATH
+
+
+
+export PKG_CONFIG_PATH=/media/rootfs/usr/lib/pkgconfig
+
+
+#export C_INCLUDE_PATH=/media/rootfs/usr/include:/media/rootfs/usr/include/libdrm
+
+#export LD_LIBRARY_PATH=/media/rootfs/usr/lib
+
+make
+sleep 5
