@@ -1,0 +1,1380 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Administrator\Desktop\JZQV3.0.0\User\uvsion\JZQv3.0.0.uvproj
+Project File Date:  08/02/2013
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling cortexm3_macro.s...
+assembling stm32f10x_vector.s...
+compiling main.c...
+compiling stm32f10x_it.c...
+stm32f10x_it.c(471): warning:  #177-D: variable "tou" was declared but never referenced
+stm32f10x_it.c:         static u8 tou[10]={0x68,0x00,0xaa,0xaa,0xaa,0xaa,0x00,0x00,0x00,0x00};
+stm32f10x_it.c:                   ^
+stm32f10x_it.c(472): warning:  #177-D: variable "i" was declared but never referenced
+stm32f10x_it.c:         u16 i;
+stm32f10x_it.c:             ^
+stm32f10x_it.c: stm32f10x_it.c: 2 warnings, 0 errors
+compiling dog.c...
+compiling EXTI_Configuration.c...
+compiling GPIO_Configuration.c...
+compiling NVIC_Configuration.c...
+compiling RCC_Configuration.c...
+compiling TIM_Configuration.c...
+compiling USART_Configuration.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling EXT_Flash.c...
+compiling spi.c...
+compiling FILE_SYS.C...
+compiling HAL_BASE.C...
+compiling SPI_SW.C...
+compiling CH376.C...
+linking...
+Program Size: Code=12896 RO-data=372 RW-data=28 ZI-data=4804  
+"..\..\obj\main.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling stm32f10x_it.c...
+stm32f10x_it.c(471): warning:  #177-D: variable "tou" was declared but never referenced
+stm32f10x_it.c:         static u8 tou[10]={0x68,0x00,0xaa,0xaa,0xaa,0xaa,0x00,0x00,0x00,0x00};
+stm32f10x_it.c:                   ^
+stm32f10x_it.c(472): warning:  #177-D: variable "i" was declared but never referenced
+stm32f10x_it.c:         u16 i;
+stm32f10x_it.c:             ^
+stm32f10x_it.c: stm32f10x_it.c: 2 warnings, 0 errors
+compiling EXTI_Configuration.c...
+compiling GPIO_Configuration.c...
+compiling NVIC_Configuration.c...
+compiling RCC_Configuration.c...
+compiling TIM_Configuration.c...
+..\InitConfiguration\TIM_Configuration.c(32): error:  #20: identifier "CCR1_Val" is undefined
+..\InitConfiguration\TIM_Configuration.c:         TIM_OCInitStructure.TIM_Pulse = CCR1_Val;
+..\InitConfiguration\TIM_Configuration.c:                                         ^
+..\InitConfiguration\TIM_Configuration.c: ..\InitConfiguration\TIM_Configuration.c: 0 warnings, 1 error
+compiling USART_Configuration.c...
+compiling EXT_Flash.c...
+compiling spi.c...
+Target not created
+Build target 'Target 1'
+compiling TIM_Configuration.c...
+linking...
+Program Size: Code=13024 RO-data=372 RW-data=28 ZI-data=4804  
+"..\..\obj\main.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling stm32f10x_it.c...
+stm32f10x_it.c(494): warning:  #223-D: function "Computer_Concentrator_Protocol_Analysis" declared implicitly
+stm32f10x_it.c:                         Computer_Concentrator_Protocol_Analysis(pUpSendCmd, G_UpSendCmdLen);
+stm32f10x_it.c:                         ^
+stm32f10x_it.c(497): warning:  #223-D: function "Err_Ack" declared implicitly
+stm32f10x_it.c:                                  Err_Ack(pUpSendCmd,0x23); //回复校验和错误应答帧                                       
+stm32f10x_it.c:                                  ^
+stm32f10x_it.c(530): warning:  #223-D: function "Check_Index_Equ" declared implicitly
+stm32f10x_it.c:                 if(Check_Index_Equ())//EXT_flash
+stm32f10x_it.c:                    ^
+stm32f10x_it.c(536): warning:  #223-D: function "ReadFlash_Byte" declared implicitly
+stm32f10x_it.c:                         ReadFlash_Byte(TIME_INTERVAL,TimeBuf,3);
+stm32f10x_it.c:                         ^
+stm32f10x_it.c(536): error:  #20: identifier "TIME_INTERVAL" is undefined
+stm32f10x_it.c:                         ReadFlash_Byte(TIME_INTERVAL,TimeBuf,3);
+stm32f10x_it.c:                                        ^
+stm32f10x_it.c(591): warning:  #223-D: function "Return_Real_Data" declared implicitly
+stm32f10x_it.c:                                                 Return_Real_Data(pMeterDataRecv,G_MeterDataLen);
+stm32f10x_it.c:                                                 ^
+stm32f10x_it.c(600): warning:  #223-D: function "Save_Meter_Data" declared implicitly
+stm32f10x_it.c:                                                 Save_Meter_Data(pMeterDataRecv,G_MeterDataLen);
+stm32f10x_it.c:                                                 ^
+stm32f10x_it.c(690): warning:  #223-D: function "TX_CTL_ON" declared implicitly
+stm32f10x_it.c:    TX_CTL_ON();
+stm32f10x_it.c:    ^
+stm32f10x_it.c(726): warning:  #223-D: function "TX_CTL_ON" declared implicitly
+stm32f10x_it.c:     TX_CTL_ON();
+stm32f10x_it.c:     ^
+stm32f10x_it.c(761): warning:  #223-D: function "TX_CTL_ON" declared implicitly
+stm32f10x_it.c:         TX_CTL_ON();
+stm32f10x_it.c:         ^
+stm32f10x_it.c: stm32f10x_it.c: 9 warnings, 1 error
+compiling EXTI_Configuration.c...
+compiling GPIO_Configuration.c...
+compiling NVIC_Configuration.c...
+compiling RCC_Configuration.c...
+compiling TIM_Configuration.c...
+compiling USART_Configuration.c...
+compiling check.c...
+..\CHECK\check.c(3): error:  #5: cannot open source input file "InterFlash.h": No such file or directory
+..\CHECK\check.c:   #include <InterFlash.h>
+..\CHECK\check.c:                          ^
+..\CHECK\check.c: ..\CHECK\check.c: 0 warnings, 1 error
+compiling EXT_Flash.c...
+compiling spi.c...
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+stm32f10x_it.c(494): warning:  #223-D: function "Computer_Concentrator_Protocol_Analysis" declared implicitly
+stm32f10x_it.c:                         Computer_Concentrator_Protocol_Analysis(pUpSendCmd, G_UpSendCmdLen);
+stm32f10x_it.c:                         ^
+stm32f10x_it.c(497): warning:  #223-D: function "Err_Ack" declared implicitly
+stm32f10x_it.c:                                  Err_Ack(pUpSendCmd,0x23); //回复校验和错误应答帧                                       
+stm32f10x_it.c:                                  ^
+stm32f10x_it.c(530): warning:  #223-D: function "Check_Index_Equ" declared implicitly
+stm32f10x_it.c:                 if(Check_Index_Equ())//EXT_flash
+stm32f10x_it.c:                    ^
+stm32f10x_it.c(536): warning:  #223-D: function "ReadFlash_Byte" declared implicitly
+stm32f10x_it.c:                         ReadFlash_Byte(TIME_INTERVAL,TimeBuf,3);
+stm32f10x_it.c:                         ^
+stm32f10x_it.c(536): error:  #20: identifier "TIME_INTERVAL" is undefined
+stm32f10x_it.c:                         ReadFlash_Byte(TIME_INTERVAL,TimeBuf,3);
+stm32f10x_it.c:                                        ^
+stm32f10x_it.c(591): warning:  #223-D: function "Return_Real_Data" declared implicitly
+stm32f10x_it.c:                                                 Return_Real_Data(pMeterDataRecv,G_MeterDataLen);
+stm32f10x_it.c:                                                 ^
+stm32f10x_it.c(600): warning:  #223-D: function "Save_Meter_Data" declared implicitly
+stm32f10x_it.c:                                                 Save_Meter_Data(pMeterDataRecv,G_MeterDataLen);
+stm32f10x_it.c:                                                 ^
+stm32f10x_it.c(690): warning:  #223-D: function "TX_CTL_ON" declared implicitly
+stm32f10x_it.c:    TX_CTL_ON();
+stm32f10x_it.c:    ^
+stm32f10x_it.c(726): warning:  #223-D: function "TX_CTL_ON" declared implicitly
+stm32f10x_it.c:     TX_CTL_ON();
+stm32f10x_it.c:     ^
+stm32f10x_it.c(761): warning:  #223-D: function "TX_CTL_ON" declared implicitly
+stm32f10x_it.c:         TX_CTL_ON();
+stm32f10x_it.c:         ^
+stm32f10x_it.c: stm32f10x_it.c: 9 warnings, 1 error
+compiling check.c...
+..\CHECK\check.c(70): warning:  #223-D: function "ReadFlash_Byte" declared implicitly
+..\CHECK\check.c:     ReadFlash_Byte(CJQ_PARAMETER_PAGEADDR+16,&InterWrkMode,1 );//读取内部flash中工作模式位
+..\CHECK\check.c:     ^
+..\CHECK\check.c(70): error:  #20: identifier "CJQ_PARAMETER_PAGEADDR" is undefined
+..\CHECK\check.c:     ReadFlash_Byte(CJQ_PARAMETER_PAGEADDR+16,&InterWrkMode,1 );//读取内部flash中工作模式位
+..\CHECK\check.c:                    ^
+..\CHECK\check.c: ..\CHECK\check.c: 1 warning, 1 error
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+stm32f10x_it.c(494): warning:  #223-D: function "Computer_Concentrator_Protocol_Analysis" declared implicitly
+stm32f10x_it.c:                         Computer_Concentrator_Protocol_Analysis(pUpSendCmd, G_UpSendCmdLen);
+stm32f10x_it.c:                         ^
+stm32f10x_it.c(497): warning:  #223-D: function "Err_Ack" declared implicitly
+stm32f10x_it.c:                                  Err_Ack(pUpSendCmd,0x23); //回复校验和错误应答帧                                       
+stm32f10x_it.c:                                  ^
+stm32f10x_it.c(530): warning:  #223-D: function "Check_Index_Equ" declared implicitly
+stm32f10x_it.c:                 if(Check_Index_Equ())//EXT_flash
+stm32f10x_it.c:                    ^
+stm32f10x_it.c(536): warning:  #223-D: function "ReadFlash_Byte" declared implicitly
+stm32f10x_it.c:                         ReadFlash_Byte(TIME_INTERVAL,TimeBuf,3);
+stm32f10x_it.c:                         ^
+stm32f10x_it.c(536): error:  #20: identifier "TIME_INTERVAL" is undefined
+stm32f10x_it.c:                         ReadFlash_Byte(TIME_INTERVAL,TimeBuf,3);
+stm32f10x_it.c:                                        ^
+stm32f10x_it.c(591): warning:  #223-D: function "Return_Real_Data" declared implicitly
+stm32f10x_it.c:                                                 Return_Real_Data(pMeterDataRecv,G_MeterDataLen);
+stm32f10x_it.c:                                                 ^
+stm32f10x_it.c(600): warning:  #223-D: function "Save_Meter_Data" declared implicitly
+stm32f10x_it.c:                                                 Save_Meter_Data(pMeterDataRecv,G_MeterDataLen);
+stm32f10x_it.c:                                                 ^
+stm32f10x_it.c(690): warning:  #223-D: function "TX_CTL_ON" declared implicitly
+stm32f10x_it.c:    TX_CTL_ON();
+stm32f10x_it.c:    ^
+stm32f10x_it.c(726): warning:  #223-D: function "TX_CTL_ON" declared implicitly
+stm32f10x_it.c:     TX_CTL_ON();
+stm32f10x_it.c:     ^
+stm32f10x_it.c(761): warning:  #223-D: function "TX_CTL_ON" declared implicitly
+stm32f10x_it.c:         TX_CTL_ON();
+stm32f10x_it.c:         ^
+stm32f10x_it.c: stm32f10x_it.c: 9 warnings, 1 error
+compiling check.c...
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+stm32f10x_it.c(494): warning:  #223-D: function "Computer_Concentrator_Protocol_Analysis" declared implicitly
+stm32f10x_it.c:                         Computer_Concentrator_Protocol_Analysis(pUpSendCmd, G_UpSendCmdLen);
+stm32f10x_it.c:                         ^
+stm32f10x_it.c(497): warning:  #223-D: function "Err_Ack" declared implicitly
+stm32f10x_it.c:                                  Err_Ack(pUpSendCmd,0x23); //回复校验和错误应答帧                                       
+stm32f10x_it.c:                                  ^
+stm32f10x_it.c(530): warning:  #223-D: function "Check_Index_Equ" declared implicitly
+stm32f10x_it.c:                 if(Check_Index_Equ())//EXT_flash
+stm32f10x_it.c:                    ^
+stm32f10x_it.c(536): warning:  #223-D: function "ReadFlash_Byte" declared implicitly
+stm32f10x_it.c:                         ReadFlash_Byte(TIME_INTERVAL,TimeBuf,3);
+stm32f10x_it.c:                         ^
+stm32f10x_it.c(536): error:  #20: identifier "TIME_INTERVAL" is undefined
+stm32f10x_it.c:                         ReadFlash_Byte(TIME_INTERVAL,TimeBuf,3);
+stm32f10x_it.c:                                        ^
+stm32f10x_it.c(591): warning:  #223-D: function "Return_Real_Data" declared implicitly
+stm32f10x_it.c:                                                 Return_Real_Data(pMeterDataRecv,G_MeterDataLen);
+stm32f10x_it.c:                                                 ^
+stm32f10x_it.c(600): warning:  #223-D: function "Save_Meter_Data" declared implicitly
+stm32f10x_it.c:                                                 Save_Meter_Data(pMeterDataRecv,G_MeterDataLen);
+stm32f10x_it.c:                                                 ^
+stm32f10x_it.c: stm32f10x_it.c: 6 warnings, 1 error
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(70): error:  #20: identifier "EXT_CJQ_PARAMETER_PAGEADDR" is undefined
+main.c:   SPI_Flash_Write(EXT_CJQ_PARAMETER_PAGEADDR,buf,13);//写入flash
+main.c:                   ^
+main.c: main.c: 0 warnings, 1 error
+compiling stm32f10x_it.c...
+stm32f10x_it.c(494): warning:  #223-D: function "Computer_Concentrator_Protocol_Analysis" declared implicitly
+stm32f10x_it.c:                         Computer_Concentrator_Protocol_Analysis(pUpSendCmd, G_UpSendCmdLen);
+stm32f10x_it.c:                         ^
+stm32f10x_it.c(497): warning:  #223-D: function "Err_Ack" declared implicitly
+stm32f10x_it.c:                                  Err_Ack(pUpSendCmd,CheckCodeErr); //回复校验和错误应答帧                                       
+stm32f10x_it.c:                                  ^
+stm32f10x_it.c(589): warning:  #223-D: function "CJQUp_Protocol_Analysis" declared implicitly
+stm32f10x_it.c:                                         CJQUp_Protocol_Analysis(pMeterDataRecv,G_RecvDataLen);
+stm32f10x_it.c:                                         ^
+stm32f10x_it.c: stm32f10x_it.c: 3 warnings, 0 errors
+compiling EXTI_Configuration.c...
+compiling GPIO_Configuration.c...
+compiling NVIC_Configuration.c...
+compiling RCC_Configuration.c...
+compiling TIM_Configuration.c...
+compiling USART_Configuration.c...
+compiling check.c...
+..\CHECK\check.c(69): error:  #20: identifier "EXT_CJQ_PARAMETER_PAGEADDR" is undefined
+..\CHECK\check.c:     SPI_Flash_Read(EXT_CJQ_PARAMETER_PAGEADDR+16,&EXTWrkMode,1);//读取外部flash中工作模式位
+..\CHECK\check.c:                    ^
+..\CHECK\check.c: ..\CHECK\check.c: 0 warnings, 1 error
+compiling EXT_Flash.c...
+..\EXT_Flash_SPI\EXT_Flash.c(231): error:  #20: identifier "EXT_CJQ_PARAMETER_PAGEADDR" is undefined
+..\EXT_Flash_SPI\EXT_Flash.c:                                   case EXT_CJQ_PARAMETER_PAGEADDR://采集器参数、温控器页
+..\EXT_Flash_SPI\EXT_Flash.c:                                        ^
+..\EXT_Flash_SPI\EXT_Flash.c(233): error:  #20: identifier "CJQ_PARAMETER_SIZE" is undefined
+..\EXT_Flash_SPI\EXT_Flash.c:                                                   SPI_Flash_Read(secpos*4096,G_PageTmp,CJQ_PARAMETER_SIZE);//读出采集器参数
+..\EXT_Flash_SPI\EXT_Flash.c:                                                                                        ^
+..\EXT_Flash_SPI\EXT_Flash.c(243): error:  #20: identifier "EXT_METER_CHECK_PAGEADDR" is undefined
+..\EXT_Flash_SPI\EXT_Flash.c:                                   case EXT_METER_CHECK_PAGEADDR://表具索引页 256+1字节
+..\EXT_Flash_SPI\EXT_Flash.c:                                        ^
+..\EXT_Flash_SPI\EXT_Flash.c(255): error:  #20: identifier "EXT_METER_NUM_PAGEADDR" is undefined
+..\EXT_Flash_SPI\EXT_Flash.c:                                   case EXT_METER_NUM_PAGEADDR://表号页 256*8字节
+..\EXT_Flash_SPI\EXT_Flash.c:                                        ^
+..\EXT_Flash_SPI\EXT_Flash.c(257): error:  #20: identifier "METER_NUM_SIZE" is undefined
+..\EXT_Flash_SPI\EXT_Flash.c:                                                   SPI_Flash_Read(secpos*4096,G_PageTmp,METER_NUM_SIZE);//
+..\EXT_Flash_SPI\EXT_Flash.c:                                                                                        ^
+..\EXT_Flash_SPI\EXT_Flash.c: ..\EXT_Flash_SPI\EXT_Flash.c: 0 warnings, 5 errors
+compiling spi.c...
+compiling Computer_Concentrator_Protocol_analysis.c...
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(4): error:  #5: cannot open source input file "InterFlash.h": No such file or directory
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:   #include <InterFlash.h>
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                          ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c: ..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c: 0 warnings, 1 error
+compiling JZQDown_Protocol_Analysis.c...
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c(4): error:  #5: cannot open source input file "InterFlash.h": No such file or directory
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c:   #include <InterFlash.h>
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c:                          ^
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c: ..\Protocol Analysis\JZQDown_Protocol_Analysis.c: 0 warnings, 1 error
+compiling CJQUp_Protocol_Analysis.c...
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(12): error:  #28: expression must have a constant value
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:         u8 SendUpFrameFormat[G_RecvDataLen+11];
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:                              ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(17): error:  #20: identifier "i" is undefined
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:         for(i=0i<8;i++)
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:             ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(17): error:  #65: expected a ";"
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:         for(i=0i<8;i++)
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:                ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(17): error:  #65: expected a ";"
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:         for(i=0i<8;i++)
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:                       ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(59): error:  #53: expected a ":"
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:                 default  break;
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:                          ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(60): warning:  #127-D: expected a statement
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:          }
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:          ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(64): warning:  #1-D: last line of file ends without a newline
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:   }
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:    ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c: ..\Protocol Analysis\CJQUp_Protocol_Analysis.c: 2 warnings, 5 errors
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(70): error:  #20: identifier "EXT_CJQ_PARAMETER_PAGEADDR" is undefined
+main.c:   SPI_Flash_Write(EXT_CJQ_PARAMETER_PAGEADDR,buf,13);//写入flash
+main.c:                   ^
+main.c: main.c: 0 warnings, 1 error
+compiling stm32f10x_it.c...
+stm32f10x_it.c(494): warning:  #223-D: function "Computer_Concentrator_Protocol_Analysis" declared implicitly
+stm32f10x_it.c:                         Computer_Concentrator_Protocol_Analysis(pUpSendCmd, G_UpSendCmdLen);
+stm32f10x_it.c:                         ^
+stm32f10x_it.c(497): warning:  #223-D: function "Err_Ack" declared implicitly
+stm32f10x_it.c:                                  Err_Ack(pUpSendCmd,CheckCodeErr); //回复校验和错误应答帧                                       
+stm32f10x_it.c:                                  ^
+stm32f10x_it.c(589): warning:  #223-D: function "CJQUp_Protocol_Analysis" declared implicitly
+stm32f10x_it.c:                                         CJQUp_Protocol_Analysis(pMeterDataRecv,G_RecvDataLen);
+stm32f10x_it.c:                                         ^
+stm32f10x_it.c: stm32f10x_it.c: 3 warnings, 0 errors
+compiling check.c...
+..\CHECK\check.c(69): error:  #20: identifier "EXT_CJQ_PARAMETER_PAGEADDR" is undefined
+..\CHECK\check.c:     SPI_Flash_Read(EXT_CJQ_PARAMETER_PAGEADDR+16,&EXTWrkMode,1);//读取外部flash中工作模式位
+..\CHECK\check.c:                    ^
+..\CHECK\check.c: ..\CHECK\check.c: 0 warnings, 1 error
+compiling EXT_Flash.c...
+..\EXT_Flash_SPI\EXT_Flash.c(232): error:  #20: identifier "SPI_FLASH_BUF" is undefined
+..\EXT_Flash_SPI\EXT_Flash.c:                                           if(SPI_FLASH_BUF[secoff+i]!=0XFF)break;//需要擦除         
+..\EXT_Flash_SPI\EXT_Flash.c:                                              ^
+..\EXT_Flash_SPI\EXT_Flash.c(245): error:  #167: argument of type "u8 *" is incompatible with parameter of type "u32"
+..\EXT_Flash_SPI\EXT_Flash.c:                                   SPI_Flash_Write_NoCheck(pBuffer,WriteAddr,secremain);//写已经擦除了的,直接写入扇区剩余区间.                                
+..\EXT_Flash_SPI\EXT_Flash.c:                                                           ^
+..\EXT_Flash_SPI\EXT_Flash.c(245): error:  #167: argument of type "u32" is incompatible with parameter of type "u8 *"
+..\EXT_Flash_SPI\EXT_Flash.c:                                   SPI_Flash_Write_NoCheck(pBuffer,WriteAddr,secremain);//写已经擦除了的,直接写入扇区剩余区间.                                
+..\EXT_Flash_SPI\EXT_Flash.c:                                                                   ^
+..\EXT_Flash_SPI\EXT_Flash.c: ..\EXT_Flash_SPI\EXT_Flash.c: 0 warnings, 3 errors
+compiling spi.c...
+compiling Computer_Concentrator_Protocol_analysis.c...
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(21): warning:  #223-D: function "JZQ_Addr_Check" declared implicitly
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                         JZQ_Check=JZQ_Addr_Check(Buf);
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                                   ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(24): warning:  #223-D: function "Err_Ack" declared implicitly
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                            Err_Ack(Buf,JZQAddrErr);
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                            ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(29): warning:  #223-D: function "Compose_Down_Frame_Format" declared implicitly
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                           Compose_Down_Frame_Format(Buf,Len);
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                           ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(33): error:  #53: expected a ":"
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                         default break;
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                 ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(34): warning:  #127-D: expected a statement
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                         }
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                         ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(35): warning:  #940-D: missing return statement at end of non-void function "Computer_Concentrator_Protocol_Analysis"
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:         }
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:         ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c: ..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c: 5 warnings, 1 error
+compiling JZQDown_Protocol_Analysis.c...
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c(82): error:  #28: expression must have a constant value
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c:       u8 DownFrameFormat[Len-10+1];
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c:                          ^
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c(83): error:  #20: identifier "u6" is undefined
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c:       u6 i=0;
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c:       ^
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c: ..\Protocol Analysis\JZQDown_Protocol_Analysis.c: 0 warnings, 2 errors
+compiling CJQUp_Protocol_Analysis.c...
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(13): error:  #28: expression must have a constant value
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:         u8 SendUpFrameFormat[G_RecvDataLen+11];
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:                              ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(60): error:  #53: expected a ":"
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:                 default  break;
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:                          ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(61): warning:  #127-D: expected a statement
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:          }
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:          ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(65): warning:  #1-D: last line of file ends without a newline
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:   }
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:    ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c: ..\Protocol Analysis\CJQUp_Protocol_Analysis.c: 2 warnings, 2 errors
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(70): error:  #20: identifier "EXT_CJQ_PARAMETER_PAGEADDR" is undefined
+main.c:   SPI_Flash_Write(EXT_CJQ_PARAMETER_PAGEADDR,buf,13);//写入flash
+main.c:                   ^
+main.c: main.c: 0 warnings, 1 error
+compiling check.c...
+..\CHECK\check.c(69): error:  #20: identifier "EXT_CJQ_PARAMETER_PAGEADDR" is undefined
+..\CHECK\check.c:     SPI_Flash_Read(EXT_CJQ_PARAMETER_PAGEADDR+16,&EXTWrkMode,1);//读取外部flash中工作模式位
+..\CHECK\check.c:                    ^
+..\CHECK\check.c: ..\CHECK\check.c: 0 warnings, 1 error
+compiling EXT_Flash.c...
+..\EXT_Flash_SPI\EXT_Flash.c(232): error:  #20: identifier "SPI_FLASH_BUF" is undefined
+..\EXT_Flash_SPI\EXT_Flash.c:                                           if(SPI_FLASH_BUF[secoff+i]!=0XFF)break;//需要擦除         
+..\EXT_Flash_SPI\EXT_Flash.c:                                              ^
+..\EXT_Flash_SPI\EXT_Flash.c: ..\EXT_Flash_SPI\EXT_Flash.c: 0 warnings, 1 error
+compiling Computer_Concentrator_Protocol_analysis.c...
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(21): warning:  #223-D: function "JZQ_Addr_Check" declared implicitly
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                         JZQ_Check=JZQ_Addr_Check(Buf);
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                                   ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(24): warning:  #223-D: function "Err_Ack" declared implicitly
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                            Err_Ack(Buf,JZQAddrErr);
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                            ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(29): warning:  #223-D: function "Compose_Down_Frame_Format" declared implicitly
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                           Compose_Down_Frame_Format(Buf,Len);
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                           ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(35): warning:  #940-D: missing return statement at end of non-void function "Computer_Concentrator_Protocol_Analysis"
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:         }
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:         ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c: ..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c: 4 warnings, 0 errors
+compiling JZQDown_Protocol_Analysis.c...
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c(82): error:  #28: expression must have a constant value
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c:       u8 DownFrameFormat[Len-10+1];
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c:                          ^
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c: ..\Protocol Analysis\JZQDown_Protocol_Analysis.c: 0 warnings, 1 error
+compiling CJQUp_Protocol_Analysis.c...
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(13): error:  #28: expression must have a constant value
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:         u8 SendUpFrameFormat[G_RecvDataLen+11];
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:                              ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(65): warning:  #1-D: last line of file ends without a newline
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:   }
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:    ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c: ..\Protocol Analysis\CJQUp_Protocol_Analysis.c: 1 warning, 1 error
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(70): error:  #20: identifier "EXT_CJQ_PARAMETER_PAGEADDR" is undefined
+main.c:   SPI_Flash_Write(EXT_CJQ_PARAMETER_PAGEADDR,buf,13);//写入flash
+main.c:                   ^
+main.c: main.c: 0 warnings, 1 error
+compiling check.c...
+..\CHECK\check.c(69): error:  #20: identifier "EXT_CJQ_PARAMETER_PAGEADDR" is undefined
+..\CHECK\check.c:     SPI_Flash_Read(EXT_CJQ_PARAMETER_PAGEADDR+16,&EXTWrkMode,1);//读取外部flash中工作模式位
+..\CHECK\check.c:                    ^
+..\CHECK\check.c: ..\CHECK\check.c: 0 warnings, 1 error
+compiling EXT_Flash.c...
+compiling JZQDown_Protocol_Analysis.c...
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c(82): error:  #28: expression must have a constant value
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c:       u8 DownFrameFormat[Len-10+1];
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c:                          ^
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c: ..\Protocol Analysis\JZQDown_Protocol_Analysis.c: 0 warnings, 1 error
+compiling CJQUp_Protocol_Analysis.c...
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(13): error:  #28: expression must have a constant value
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:         u8 SendUpFrameFormat[G_RecvDataLen+11];
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:                              ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(65): warning:  #1-D: last line of file ends without a newline
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:   }
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:    ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c: ..\Protocol Analysis\CJQUp_Protocol_Analysis.c: 1 warning, 1 error
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(70): error:  #20: identifier "EXT_CJQ_PARAMETER_PAGEADDR" is undefined
+main.c:   SPI_Flash_Write(EXT_CJQ_PARAMETER_PAGEADDR,buf,13);//写入flash
+main.c:                   ^
+main.c: main.c: 0 warnings, 1 error
+compiling check.c...
+compiling JZQDown_Protocol_Analysis.c...
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c(82): error:  #28: expression must have a constant value
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c:       u8 DownFrameFormat[Len-10+1];
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c:                          ^
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c: ..\Protocol Analysis\JZQDown_Protocol_Analysis.c: 0 warnings, 1 error
+compiling CJQUp_Protocol_Analysis.c...
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(13): error:  #28: expression must have a constant value
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:         u8 SendUpFrameFormat[G_RecvDataLen+11];
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:                              ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(65): warning:  #1-D: last line of file ends without a newline
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:   }
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:    ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c: ..\Protocol Analysis\CJQUp_Protocol_Analysis.c: 1 warning, 1 error
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(64): warning:  #177-D: variable "buf" was declared but never referenced
+main.c:   u8 buf[15]={0xfe,0xfe,0x09,0x12,0x34,0xde,0xcb,0x56}; 
+main.c:      ^
+main.c: main.c: 1 warning, 0 errors
+compiling JZQDown_Protocol_Analysis.c...
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c(82): error:  #28: expression must have a constant value
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c:       u8 DownFrameFormat[Len-10+1];
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c:                          ^
+..\Protocol Analysis\JZQDown_Protocol_Analysis.c: ..\Protocol Analysis\JZQDown_Protocol_Analysis.c: 0 warnings, 1 error
+compiling CJQUp_Protocol_Analysis.c...
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(13): error:  #28: expression must have a constant value
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:         u8 SendUpFrameFormat[G_RecvDataLen+11];
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:                              ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(65): warning:  #1-D: last line of file ends without a newline
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:   }
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:    ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c: ..\Protocol Analysis\CJQUp_Protocol_Analysis.c: 1 warning, 1 error
+Target not created
+Build target 'Target 1'
+compiling JZQDown_Protocol_Analysis.c...
+compiling CJQUp_Protocol_Analysis.c...
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(65): warning:  #1-D: last line of file ends without a newline
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:   }
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:    ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c: ..\Protocol Analysis\CJQUp_Protocol_Analysis.c: 1 warning, 0 errors
+linking...
+..\..\obj\main.axf: Error: L6218E: Undefined symbol TIM3_IRQHandler (referred from stm32f10x_vector.o).
+..\..\obj\main.axf: Not enough information to list image symbols.
+..\..\obj\main.axf: Finished: 1 information, 0 warning and 1 error messages.
+Target not created
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+stm32f10x_it.c(494): warning:  #223-D: function "Computer_Concentrator_Protocol_Analysis" declared implicitly
+stm32f10x_it.c:                         Computer_Concentrator_Protocol_Analysis(pUpSendCmd, G_UpSendCmdLen);
+stm32f10x_it.c:                         ^
+stm32f10x_it.c(497): warning:  #223-D: function "Err_Ack" declared implicitly
+stm32f10x_it.c:                                  Err_Ack(pUpSendCmd,CheckCodeErr); //回复校验和错误应答帧                                       
+stm32f10x_it.c:                                  ^
+stm32f10x_it.c(589): warning:  #223-D: function "CJQUp_Protocol_Analysis" declared implicitly
+stm32f10x_it.c:                                         CJQUp_Protocol_Analysis(pMeterDataRecv,G_RecvDataLen);
+stm32f10x_it.c:                                         ^
+stm32f10x_it.c: stm32f10x_it.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=13772 RO-data=372 RW-data=20 ZI-data=4764  
+"..\..\obj\main.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=13772 RO-data=372 RW-data=20 ZI-data=4764  
+"..\..\obj\main.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling cortexm3_macro.s...
+assembling stm32f10x_vector.s...
+compiling main.c...
+main.c(64): warning:  #177-D: variable "buf" was declared but never referenced
+main.c:   u8 buf[15]={0xfe,0xfe,0x09,0x12,0x34,0xde,0xcb,0x56}; 
+main.c:      ^
+main.c: main.c: 1 warning, 0 errors
+compiling stm32f10x_it.c...
+stm32f10x_it.c(494): warning:  #223-D: function "Computer_Concentrator_Protocol_Analysis" declared implicitly
+stm32f10x_it.c:                         Computer_Concentrator_Protocol_Analysis(pUpSendCmd, G_UpSendCmdLen);
+stm32f10x_it.c:                         ^
+stm32f10x_it.c(497): warning:  #223-D: function "Err_Ack" declared implicitly
+stm32f10x_it.c:                                  Err_Ack(pUpSendCmd,CheckCodeErr); //回复校验和错误应答帧                                       
+stm32f10x_it.c:                                  ^
+stm32f10x_it.c(589): warning:  #223-D: function "CJQUp_Protocol_Analysis" declared implicitly
+stm32f10x_it.c:                                         CJQUp_Protocol_Analysis(pMeterDataRecv,G_RecvDataLen);
+stm32f10x_it.c:                                         ^
+stm32f10x_it.c: stm32f10x_it.c: 3 warnings, 0 errors
+compiling dog.c...
+compiling EXTI_Configuration.c...
+compiling GPIO_Configuration.c...
+compiling NVIC_Configuration.c...
+compiling RCC_Configuration.c...
+compiling TIM_Configuration.c...
+compiling USART_Configuration.c...
+compiling check.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_lib.c...
+compiling stm32f10x_nvic.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling EXT_Flash.c...
+compiling spi.c...
+compiling FILE_SYS.C...
+compiling HAL_BASE.C...
+compiling SPI_SW.C...
+compiling CH376.C...
+compiling Computer_Concentrator_Protocol_analysis.c...
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(21): warning:  #223-D: function "JZQ_Addr_Check" declared implicitly
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                         JZQ_Check=JZQ_Addr_Check(Buf);
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                                   ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(24): warning:  #223-D: function "Err_Ack" declared implicitly
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                            Err_Ack(Buf,JZQAddrErr);
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                            ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(29): warning:  #223-D: function "Compose_Down_Frame_Format" declared implicitly
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                           Compose_Down_Frame_Format(Buf,Len);
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                           ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(35): warning:  #940-D: missing return statement at end of non-void function "Computer_Concentrator_Protocol_Analysis"
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:         }
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:         ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c: ..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c: 4 warnings, 0 errors
+compiling JZQDown_Protocol_Analysis.c...
+compiling CJQUp_Protocol_Analysis.c...
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c(65): warning:  #1-D: last line of file ends without a newline
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:   }
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c:    ^
+..\Protocol Analysis\CJQUp_Protocol_Analysis.c: ..\Protocol Analysis\CJQUp_Protocol_Analysis.c: 1 warning, 0 errors
+linking...
+Program Size: Code=13772 RO-data=372 RW-data=20 ZI-data=4764  
+"..\..\obj\main.axf" - 0 Error(s), 9 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(64): warning:  #177-D: variable "buf" was declared but never referenced
+main.c:   u8 buf[15]={0xfe,0xfe,0x09,0x12,0x34,0xde,0xcb,0x56}; 
+main.c:      ^
+main.c: main.c: 1 warning, 0 errors
+compiling stm32f10x_it.c...
+stm32f10x_it.c(494): warning:  #223-D: function "Computer_Concentrator_Protocol_Analysis" declared implicitly
+stm32f10x_it.c:                         Computer_Concentrator_Protocol_Analysis(pUpSendCmd, G_UpSendCmdLen);
+stm32f10x_it.c:                         ^
+stm32f10x_it.c: stm32f10x_it.c: 1 warning, 0 errors
+compiling EXTI_Configuration.c...
+compiling GPIO_Configuration.c...
+compiling NVIC_Configuration.c...
+compiling RCC_Configuration.c...
+compiling TIM_Configuration.c...
+compiling USART_Configuration.c...
+compiling check.c...
+compiling EXT_Flash.c...
+compiling spi.c...
+compiling Computer_Concentrator_Protocol_analysis.c...
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(35): warning:  #940-D: missing return statement at end of non-void function "Computer_Concentrator_Protocol_Analysis"
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:         }
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:         ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c: ..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c: 1 warning, 0 errors
+compiling JZQDown_Protocol_Analysis.c...
+compiling CJQUp_Protocol_Analysis.c...
+linking...
+Program Size: Code=13772 RO-data=372 RW-data=20 ZI-data=4764  
+"..\..\obj\main.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+..\EXT_Flash_SPI\EXT_Flash.h(18): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 19 of "platform_config.h")
+..\EXT_Flash_SPI\EXT_Flash.h:   #define CJQ_NUM                 ((u32)0x00000010)//采集器数量
+..\EXT_Flash_SPI\EXT_Flash.h:           ^
+..\uvsion\platform_config.h(19): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 18 of "..\EXT_Flash_SPI\EXT_Flash.h")
+..\uvsion\platform_config.h:   #define CJQ_NUM        20;
+..\uvsion\platform_config.h:           ^
+main.c(64): warning:  #177-D: variable "buf" was declared but never referenced
+main.c:   u8 buf[15]={0xfe,0xfe,0x09,0x12,0x34,0xde,0xcb,0x56}; 
+main.c:      ^
+main.c: main.c: 3 warnings, 0 errors
+compiling stm32f10x_it.c...
+..\EXT_Flash_SPI\EXT_Flash.h(18): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 19 of "..\uvsion\platform_config.h")
+..\EXT_Flash_SPI\EXT_Flash.h:   #define CJQ_NUM                 ((u32)0x00000010)//采集器数量
+..\EXT_Flash_SPI\EXT_Flash.h:           ^
+stm32f10x_it.c(494): warning:  #223-D: function "Computer_Concentrator_Protocol_Analysis" declared implicitly
+stm32f10x_it.c:                         Computer_Concentrator_Protocol_Analysis(pUpSendCmd, G_UpSendCmdLen);
+stm32f10x_it.c:                         ^
+stm32f10x_it.c: stm32f10x_it.c: 2 warnings, 0 errors
+compiling EXTI_Configuration.c...
+compiling GPIO_Configuration.c...
+compiling NVIC_Configuration.c...
+compiling RCC_Configuration.c...
+compiling TIM_Configuration.c...
+compiling USART_Configuration.c...
+compiling check.c...
+..\EXT_Flash_SPI\EXT_Flash.h(18): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 19 of "..\uvsion\platform_config.h")
+..\EXT_Flash_SPI\EXT_Flash.h:   #define CJQ_NUM                 ((u32)0x00000010)//采集器数量
+..\EXT_Flash_SPI\EXT_Flash.h:           ^
+..\EXT_Flash_SPI\EXT_Flash.h: ..\CHECK\check.c: 1 warning, 0 errors
+compiling EXT_Flash.c...
+..\uvsion\platform_config.h(19): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 18 of "..\EXT_Flash_SPI\EXT_Flash.h")
+..\uvsion\platform_config.h:   #define CJQ_NUM        20;
+..\uvsion\platform_config.h:           ^
+..\uvsion\platform_config.h: ..\EXT_Flash_SPI\EXT_Flash.c: 1 warning, 0 errors
+compiling spi.c...
+..\EXT_Flash_SPI\EXT_Flash.h(18): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 19 of "..\uvsion\platform_config.h")
+..\EXT_Flash_SPI\EXT_Flash.h:   #define CJQ_NUM                 ((u32)0x00000010)//采集器数量
+..\EXT_Flash_SPI\EXT_Flash.h:           ^
+..\EXT_Flash_SPI\EXT_Flash.h: ..\EXT_Flash_SPI\SPI\spi.c: 1 warning, 0 errors
+compiling Computer_Concentrator_Protocol_analysis.c...
+..\EXT_Flash_SPI\EXT_Flash.h(18): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 19 of "..\uvsion\platform_config.h")
+..\EXT_Flash_SPI\EXT_Flash.h:   #define CJQ_NUM                 ((u32)0x00000010)//采集器数量
+..\EXT_Flash_SPI\EXT_Flash.h:           ^
+..\uvsion\platform_config.h(19): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 18 of "..\EXT_Flash_SPI\EXT_Flash.h")
+..\uvsion\platform_config.h:   #define CJQ_NUM        20;
+..\uvsion\platform_config.h:           ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(35): warning:  #223-D: function "Init_JZQ" declared implicitly
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                         Init_JZQ();
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:                                         ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(39): warning:  #940-D: missing return statement at end of non-void function "Computer_Concentrator_Protocol_Analysis"
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:         }
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:         ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c: ..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c: 4 warnings, 0 errors
+compiling JZQDown_Protocol_Analysis.c...
+..\EXT_Flash_SPI\EXT_Flash.h(18): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 19 of "..\uvsion\platform_config.h")
+..\EXT_Flash_SPI\EXT_Flash.h:   #define CJQ_NUM                 ((u32)0x00000010)//采集器数量
+..\EXT_Flash_SPI\EXT_Flash.h:           ^
+..\uvsion\platform_config.h(19): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 18 of "..\EXT_Flash_SPI\EXT_Flash.h")
+..\uvsion\platform_config.h:   #define CJQ_NUM        20;
+..\uvsion\platform_config.h:           ^
+..\uvsion\platform_config.h: ..\Protocol Analysis\JZQDown_Protocol_Analysis.c: 2 warnings, 0 errors
+compiling CJQUp_Protocol_Analysis.c...
+..\EXT_Flash_SPI\EXT_Flash.h(18): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 19 of "..\uvsion\platform_config.h")
+..\EXT_Flash_SPI\EXT_Flash.h:   #define CJQ_NUM                 ((u32)0x00000010)//采集器数量
+..\EXT_Flash_SPI\EXT_Flash.h:           ^
+..\uvsion\platform_config.h(19): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 18 of "..\EXT_Flash_SPI\EXT_Flash.h")
+..\uvsion\platform_config.h:   #define CJQ_NUM        20;
+..\uvsion\platform_config.h:           ^
+..\uvsion\platform_config.h: ..\Protocol Analysis\CJQUp_Protocol_Analysis.c: 2 warnings, 0 errors
+compiling SelfProtocolAnalysis.C...
+..\EXT_Flash_SPI\EXT_Flash.h(18): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 19 of "..\uvsion\platform_config.h")
+..\EXT_Flash_SPI\EXT_Flash.h:   #define CJQ_NUM                 ((u32)0x00000010)//采集器数量
+..\EXT_Flash_SPI\EXT_Flash.h:           ^
+..\uvsion\platform_config.h(19): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 18 of "..\EXT_Flash_SPI\EXT_Flash.h")
+..\uvsion\platform_config.h:   #define CJQ_NUM        20;
+..\uvsion\platform_config.h:           ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(7): error:  #17: expected a "]"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[CJQ_NUM*8]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:                ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(7): error:  #75: operand of "*" must be a pointer
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[CJQ_NUM*8]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:                        ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(7): error:  #65: expected a ";"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[CJQ_NUM*8]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:                         ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(8): error:  #268: declaration may not appear after executable statement in block
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 i;
+..\Protocol Analysis\SelfProtocolAnalysis.C:    ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(17): error:  #18: expected a ")"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_ADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                      ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(17): error:  #75: operand of "*" must be a pointer
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_ADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                              ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(17): error:  #65: expected a ";"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_ADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                               ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(18): error:  #18: expected a ")"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_RFADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器无线模块子节点地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                        ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(18): error:  #75: operand of "*" must be a pointer
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_RFADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器无线模块子节点地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                                ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(18): error:  #65: expected a ";"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_RFADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器无线模块子节点地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                                 ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(25): error:  #165: too few arguments in function call
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_NUM,JZQ_Init,1);//初始化采集器数量为0
+..\Protocol Analysis\SelfProtocolAnalysis.C:                    ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(25): error:  #18: expected a ")"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_NUM,JZQ_Init,1);//初始化采集器数量为0
+..\Protocol Analysis\SelfProtocolAnalysis.C:                    ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(25): error:  #29: expected an expression
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_NUM,JZQ_Init,1);//初始化采集器数量为0
+..\Protocol Analysis\SelfProtocolAnalysis.C:                           ^
+..\Protocol Analysis\SelfProtocolAnalysis.C: ..\Protocol Analysis\SelfProtocolAnalysis.C: 2 warnings, 13 errors
+Target not created
+Build target 'Target 1'
+compiling main.c...
+..\EXT_Flash_SPI\EXT_Flash.h(18): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 19 of "platform_config.h")
+..\EXT_Flash_SPI\EXT_Flash.h:   #define CJQ_NUM                 ((u32)0x00000010)//采集器数量
+..\EXT_Flash_SPI\EXT_Flash.h:           ^
+..\uvsion\platform_config.h(19): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 18 of "..\EXT_Flash_SPI\EXT_Flash.h")
+..\uvsion\platform_config.h:   #define CJQ_NUM        20;
+..\uvsion\platform_config.h:           ^
+main.c(64): warning:  #177-D: variable "buf" was declared but never referenced
+main.c:   u8 buf[15]={0xfe,0xfe,0x09,0x12,0x34,0xde,0xcb,0x56}; 
+main.c:      ^
+main.c: main.c: 3 warnings, 0 errors
+compiling stm32f10x_it.c...
+..\EXT_Flash_SPI\EXT_Flash.h(18): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 19 of "..\uvsion\platform_config.h")
+..\EXT_Flash_SPI\EXT_Flash.h:   #define CJQ_NUM                 ((u32)0x00000010)//采集器数量
+..\EXT_Flash_SPI\EXT_Flash.h:           ^
+stm32f10x_it.c(494): warning:  #223-D: function "Computer_Concentrator_Protocol_Analysis" declared implicitly
+stm32f10x_it.c:                         Computer_Concentrator_Protocol_Analysis(pUpSendCmd, G_UpSendCmdLen);
+stm32f10x_it.c:                         ^
+stm32f10x_it.c: stm32f10x_it.c: 2 warnings, 0 errors
+compiling EXTI_Configuration.c...
+compiling GPIO_Configuration.c...
+compiling NVIC_Configuration.c...
+compiling RCC_Configuration.c...
+compiling TIM_Configuration.c...
+compiling USART_Configuration.c...
+compiling check.c...
+..\EXT_Flash_SPI\EXT_Flash.h(18): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 19 of "..\uvsion\platform_config.h")
+..\EXT_Flash_SPI\EXT_Flash.h:   #define CJQ_NUM                 ((u32)0x00000010)//采集器数量
+..\EXT_Flash_SPI\EXT_Flash.h:           ^
+..\EXT_Flash_SPI\EXT_Flash.h: ..\CHECK\check.c: 1 warning, 0 errors
+compiling EXT_Flash.c...
+..\uvsion\platform_config.h(19): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 18 of "..\EXT_Flash_SPI\EXT_Flash.h")
+..\uvsion\platform_config.h:   #define CJQ_NUM        20;
+..\uvsion\platform_config.h:           ^
+..\uvsion\platform_config.h: ..\EXT_Flash_SPI\EXT_Flash.c: 1 warning, 0 errors
+compiling spi.c...
+..\EXT_Flash_SPI\EXT_Flash.h(18): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 19 of "..\uvsion\platform_config.h")
+..\EXT_Flash_SPI\EXT_Flash.h:   #define CJQ_NUM                 ((u32)0x00000010)//采集器数量
+..\EXT_Flash_SPI\EXT_Flash.h:           ^
+..\EXT_Flash_SPI\EXT_Flash.h: ..\EXT_Flash_SPI\SPI\spi.c: 1 warning, 0 errors
+compiling Computer_Concentrator_Protocol_analysis.c...
+..\EXT_Flash_SPI\EXT_Flash.h(18): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 19 of "..\uvsion\platform_config.h")
+..\EXT_Flash_SPI\EXT_Flash.h:   #define CJQ_NUM                 ((u32)0x00000010)//采集器数量
+..\EXT_Flash_SPI\EXT_Flash.h:           ^
+..\uvsion\platform_config.h(19): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 18 of "..\EXT_Flash_SPI\EXT_Flash.h")
+..\uvsion\platform_config.h:   #define CJQ_NUM        20;
+..\uvsion\platform_config.h:           ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(39): warning:  #940-D: missing return statement at end of non-void function "Computer_Concentrator_Protocol_Analysis"
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:         }
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:         ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c: ..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c: 3 warnings, 0 errors
+compiling JZQDown_Protocol_Analysis.c...
+..\EXT_Flash_SPI\EXT_Flash.h(18): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 19 of "..\uvsion\platform_config.h")
+..\EXT_Flash_SPI\EXT_Flash.h:   #define CJQ_NUM                 ((u32)0x00000010)//采集器数量
+..\EXT_Flash_SPI\EXT_Flash.h:           ^
+..\uvsion\platform_config.h(19): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 18 of "..\EXT_Flash_SPI\EXT_Flash.h")
+..\uvsion\platform_config.h:   #define CJQ_NUM        20;
+..\uvsion\platform_config.h:           ^
+..\uvsion\platform_config.h: ..\Protocol Analysis\JZQDown_Protocol_Analysis.c: 2 warnings, 0 errors
+compiling CJQUp_Protocol_Analysis.c...
+..\EXT_Flash_SPI\EXT_Flash.h(18): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 19 of "..\uvsion\platform_config.h")
+..\EXT_Flash_SPI\EXT_Flash.h:   #define CJQ_NUM                 ((u32)0x00000010)//采集器数量
+..\EXT_Flash_SPI\EXT_Flash.h:           ^
+..\uvsion\platform_config.h(19): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 18 of "..\EXT_Flash_SPI\EXT_Flash.h")
+..\uvsion\platform_config.h:   #define CJQ_NUM        20;
+..\uvsion\platform_config.h:           ^
+..\uvsion\platform_config.h: ..\Protocol Analysis\CJQUp_Protocol_Analysis.c: 2 warnings, 0 errors
+compiling SelfProtocolAnalysis.C...
+..\EXT_Flash_SPI\EXT_Flash.h(18): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 19 of "..\uvsion\platform_config.h")
+..\EXT_Flash_SPI\EXT_Flash.h:   #define CJQ_NUM                 ((u32)0x00000010)//采集器数量
+..\EXT_Flash_SPI\EXT_Flash.h:           ^
+..\uvsion\platform_config.h(19): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 18 of "..\EXT_Flash_SPI\EXT_Flash.h")
+..\uvsion\platform_config.h:   #define CJQ_NUM        20;
+..\uvsion\platform_config.h:           ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(7): error:  #17: expected a "]"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[CJQ_NUM*8]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:                ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(7): error:  #75: operand of "*" must be a pointer
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[CJQ_NUM*8]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:                        ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(7): error:  #65: expected a ";"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[CJQ_NUM*8]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:                         ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(8): error:  #268: declaration may not appear after executable statement in block
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 i;
+..\Protocol Analysis\SelfProtocolAnalysis.C:    ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(17): error:  #18: expected a ")"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_ADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                      ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(17): error:  #75: operand of "*" must be a pointer
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_ADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                              ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(17): error:  #65: expected a ";"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_ADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                               ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(18): error:  #18: expected a ")"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_RFADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器无线模块子节点地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                        ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(18): error:  #75: operand of "*" must be a pointer
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_RFADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器无线模块子节点地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                                ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(18): error:  #65: expected a ";"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_RFADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器无线模块子节点地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                                 ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(25): error:  #165: too few arguments in function call
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_NUM,JZQ_Init,1);//初始化采集器数量为0
+..\Protocol Analysis\SelfProtocolAnalysis.C:                    ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(25): error:  #18: expected a ")"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_NUM,JZQ_Init,1);//初始化采集器数量为0
+..\Protocol Analysis\SelfProtocolAnalysis.C:                    ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(25): error:  #29: expected an expression
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_NUM,JZQ_Init,1);//初始化采集器数量为0
+..\Protocol Analysis\SelfProtocolAnalysis.C:                           ^
+..\Protocol Analysis\SelfProtocolAnalysis.C: ..\Protocol Analysis\SelfProtocolAnalysis.C: 2 warnings, 13 errors
+Target not created
+Build target 'Target 1'
+compiling SelfProtocolAnalysis.C...
+..\EXT_Flash_SPI\EXT_Flash.h(18): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 19 of "..\uvsion\platform_config.h")
+..\EXT_Flash_SPI\EXT_Flash.h:   #define CJQ_NUM                 ((u32)0x00000010)//采集器数量
+..\EXT_Flash_SPI\EXT_Flash.h:           ^
+..\uvsion\platform_config.h(19): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 18 of "..\EXT_Flash_SPI\EXT_Flash.h")
+..\uvsion\platform_config.h:   #define CJQ_NUM        20;
+..\uvsion\platform_config.h:           ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(7): error:  #17: expected a "]"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[CJQ_NUM*8]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:                ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(7): error:  #75: operand of "*" must be a pointer
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[CJQ_NUM*8]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:                        ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(7): error:  #65: expected a ";"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[CJQ_NUM*8]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:                         ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(8): error:  #268: declaration may not appear after executable statement in block
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 i;
+..\Protocol Analysis\SelfProtocolAnalysis.C:    ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(17): error:  #18: expected a ")"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_ADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                      ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(17): error:  #75: operand of "*" must be a pointer
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_ADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                              ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(17): error:  #65: expected a ";"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_ADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                               ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(18): error:  #18: expected a ")"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_RFADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器无线模块子节点地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                        ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(18): error:  #75: operand of "*" must be a pointer
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_RFADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器无线模块子节点地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                                ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(18): error:  #65: expected a ";"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_RFADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器无线模块子节点地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                                 ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(25): error:  #165: too few arguments in function call
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_NUM,JZQ_Init,1);//初始化采集器数量为0
+..\Protocol Analysis\SelfProtocolAnalysis.C:                    ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(25): error:  #18: expected a ")"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_NUM,JZQ_Init,1);//初始化采集器数量为0
+..\Protocol Analysis\SelfProtocolAnalysis.C:                    ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(25): error:  #29: expected an expression
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_NUM,JZQ_Init,1);//初始化采集器数量为0
+..\Protocol Analysis\SelfProtocolAnalysis.C:                           ^
+..\Protocol Analysis\SelfProtocolAnalysis.C: ..\Protocol Analysis\SelfProtocolAnalysis.C: 2 warnings, 13 errors
+Target not created
+Build target 'Target 1'
+compiling SelfProtocolAnalysis.C...
+..\EXT_Flash_SPI\EXT_Flash.h(18): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 19 of "..\uvsion\platform_config.h")
+..\EXT_Flash_SPI\EXT_Flash.h:   #define CJQ_NUM                 ((u32)0x00000010)//采集器数量
+..\EXT_Flash_SPI\EXT_Flash.h:           ^
+..\uvsion\platform_config.h(19): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 18 of "..\EXT_Flash_SPI\EXT_Flash.h")
+..\uvsion\platform_config.h:   #define CJQ_NUM        20;
+..\uvsion\platform_config.h:           ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(7): error:  #17: expected a "]"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[CJQ_NUM*8]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:                ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(7): error:  #75: operand of "*" must be a pointer
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[CJQ_NUM*8]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:                        ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(7): error:  #65: expected a ";"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[CJQ_NUM*8]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:                         ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(8): error:  #268: declaration may not appear after executable statement in block
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 i;
+..\Protocol Analysis\SelfProtocolAnalysis.C:    ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(17): error:  #18: expected a ")"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_ADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                      ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(17): error:  #75: operand of "*" must be a pointer
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_ADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                              ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(17): error:  #65: expected a ";"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_ADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                               ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(18): error:  #18: expected a ")"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_RFADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器无线模块子节点地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                        ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(18): error:  #75: operand of "*" must be a pointer
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_RFADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器无线模块子节点地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                                ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(18): error:  #65: expected a ";"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_RFADDR,JZQ_Init,CJQ_NUM*8);//初始化采集器无线模块子节点地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                                 ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(25): error:  #165: too few arguments in function call
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_NUM,JZQ_Init,1);//初始化采集器数量为0
+..\Protocol Analysis\SelfProtocolAnalysis.C:                    ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(25): error:  #18: expected a ")"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_NUM,JZQ_Init,1);//初始化采集器数量为0
+..\Protocol Analysis\SelfProtocolAnalysis.C:                    ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(25): error:  #29: expected an expression
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_NUM,JZQ_Init,1);//初始化采集器数量为0
+..\Protocol Analysis\SelfProtocolAnalysis.C:                           ^
+..\Protocol Analysis\SelfProtocolAnalysis.C: ..\Protocol Analysis\SelfProtocolAnalysis.C: 2 warnings, 13 errors
+Target not created
+Build target 'Target 1'
+compiling SelfProtocolAnalysis.C...
+..\EXT_Flash_SPI\EXT_Flash.h(18): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 19 of "..\uvsion\platform_config.h")
+..\EXT_Flash_SPI\EXT_Flash.h:   #define CJQ_NUM                 ((u32)0x00000010)//采集器数量
+..\EXT_Flash_SPI\EXT_Flash.h:           ^
+..\uvsion\platform_config.h(19): warning:  #47-D: incompatible redefinition of macro "CJQ_NUM" (declared at line 18 of "..\EXT_Flash_SPI\EXT_Flash.h")
+..\uvsion\platform_config.h:   #define CJQ_NUM        20;
+..\uvsion\platform_config.h:           ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(25): error:  #165: too few arguments in function call
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_NUM,JZQ_Init,1);//初始化采集器数量为0
+..\Protocol Analysis\SelfProtocolAnalysis.C:                    ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(25): error:  #18: expected a ")"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_NUM,JZQ_Init,1);//初始化采集器数量为0
+..\Protocol Analysis\SelfProtocolAnalysis.C:                    ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(25): error:  #29: expected an expression
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_NUM,JZQ_Init,1);//初始化采集器数量为0
+..\Protocol Analysis\SelfProtocolAnalysis.C:                           ^
+..\Protocol Analysis\SelfProtocolAnalysis.C: ..\Protocol Analysis\SelfProtocolAnalysis.C: 2 warnings, 3 errors
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(64): warning:  #177-D: variable "buf" was declared but never referenced
+main.c:   u8 buf[15]={0xfe,0xfe,0x09,0x12,0x34,0xde,0xcb,0x56}; 
+main.c:      ^
+main.c: main.c: 1 warning, 0 errors
+compiling stm32f10x_it.c...
+stm32f10x_it.c(494): warning:  #223-D: function "Computer_Concentrator_Protocol_Analysis" declared implicitly
+stm32f10x_it.c:                         Computer_Concentrator_Protocol_Analysis(pUpSendCmd, G_UpSendCmdLen);
+stm32f10x_it.c:                         ^
+stm32f10x_it.c: stm32f10x_it.c: 1 warning, 0 errors
+compiling EXTI_Configuration.c...
+compiling GPIO_Configuration.c...
+compiling NVIC_Configuration.c...
+compiling RCC_Configuration.c...
+compiling TIM_Configuration.c...
+compiling USART_Configuration.c...
+compiling check.c...
+compiling EXT_Flash.c...
+compiling spi.c...
+compiling Computer_Concentrator_Protocol_analysis.c...
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(39): warning:  #940-D: missing return statement at end of non-void function "Computer_Concentrator_Protocol_Analysis"
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:         }
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:         ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c: ..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c: 1 warning, 0 errors
+compiling JZQDown_Protocol_Analysis.c...
+compiling CJQUp_Protocol_Analysis.c...
+compiling SelfProtocolAnalysis.C...
+..\Protocol Analysis\SelfProtocolAnalysis.C(7): error:  #17: expected a "]"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[CJQ_Num*8]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:                ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(7): error:  #75: operand of "*" must be a pointer
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[CJQ_Num*8]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:                        ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(7): error:  #65: expected a ";"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[CJQ_Num*8]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:                         ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(8): error:  #268: declaration may not appear after executable statement in block
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 i;
+..\Protocol Analysis\SelfProtocolAnalysis.C:    ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(17): error:  #18: expected a ")"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_ADDR,JZQ_Init,CJQ_Num*8);//初始化采集器地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                      ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(17): error:  #75: operand of "*" must be a pointer
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_ADDR,JZQ_Init,CJQ_Num*8);//初始化采集器地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                              ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(17): error:  #65: expected a ";"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_ADDR,JZQ_Init,CJQ_Num*8);//初始化采集器地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                               ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(18): error:  #18: expected a ")"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_RFADDR,JZQ_Init,CJQ_Num*8);//初始化采集器无线模块子节点地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                        ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(18): error:  #75: operand of "*" must be a pointer
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_RFADDR,JZQ_Init,CJQ_Num*8);//初始化采集器无线模块子节点地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                                ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(18): error:  #65: expected a ";"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_RFADDR,JZQ_Init,CJQ_Num*8);//初始化采集器无线模块子节点地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                                 ^
+..\Protocol Analysis\SelfProtocolAnalysis.C: ..\Protocol Analysis\SelfProtocolAnalysis.C: 0 warnings, 10 errors
+Target not created
+Build target 'Target 1'
+compiling SelfProtocolAnalysis.C...
+..\Protocol Analysis\SelfProtocolAnalysis.C(17): error:  #18: expected a ")"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_ADDR,JZQ_Init,CJQ_Num*8);//初始化采集器地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                      ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(17): error:  #75: operand of "*" must be a pointer
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_ADDR,JZQ_Init,CJQ_Num*8);//初始化采集器地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                              ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(17): error:  #65: expected a ";"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_ADDR,JZQ_Init,CJQ_Num*8);//初始化采集器地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                               ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(18): error:  #18: expected a ")"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_RFADDR,JZQ_Init,CJQ_Num*8);//初始化采集器无线模块子节点地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                        ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(18): error:  #75: operand of "*" must be a pointer
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_RFADDR,JZQ_Init,CJQ_Num*8);//初始化采集器无线模块子节点地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                                ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(18): error:  #65: expected a ";"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    SPI_Flash_Write(CJQ_RFADDR,JZQ_Init,CJQ_Num*8);//初始化采集器无线模块子节点地址全AA
+..\Protocol Analysis\SelfProtocolAnalysis.C:                                                 ^
+..\Protocol Analysis\SelfProtocolAnalysis.C: ..\Protocol Analysis\SelfProtocolAnalysis.C: 0 warnings, 6 errors
+Target not created
+Build target 'Target 1'
+compiling SelfProtocolAnalysis.C...
+linking...
+Program Size: Code=14020 RO-data=372 RW-data=20 ZI-data=4764  
+"..\..\obj\main.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=14020 RO-data=372 RW-data=20 ZI-data=4764  
+"..\..\obj\main.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=14020 RO-data=372 RW-data=20 ZI-data=4764  
+"..\..\obj\main.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=14020 RO-data=372 RW-data=20 ZI-data=4764  
+"..\..\obj\main.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=14020 RO-data=372 RW-data=20 ZI-data=4764  
+"..\..\obj\main.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=14020 RO-data=372 RW-data=20 ZI-data=4764  
+"..\..\obj\main.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=14020 RO-data=372 RW-data=20 ZI-data=4764  
+"..\..\obj\main.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling SelfProtocolAnalysis.C...
+..\Protocol Analysis\SelfProtocolAnalysis.C(8): error:  #17: expected a "]"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[CJQ_Num*8]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:                ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(8): error:  #75: operand of "*" must be a pointer
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[CJQ_Num*8]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:                        ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(8): error:  #65: expected a ";"
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[CJQ_Num*8]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:                         ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(9): error:  #268: declaration may not appear after executable statement in block
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 i;
+..\Protocol Analysis\SelfProtocolAnalysis.C:    ^
+..\Protocol Analysis\SelfProtocolAnalysis.C: ..\Protocol Analysis\SelfProtocolAnalysis.C: 0 warnings, 4 errors
+Target not created
+Build target 'Target 1'
+compiling SelfProtocolAnalysis.C...
+..\Protocol Analysis\SelfProtocolAnalysis.C(8): error:  #75: operand of "*" must be a pointer
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 Buf=CJQ_Num*8;
+..\Protocol Analysis\SelfProtocolAnalysis.C:                   ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(9): error:  #268: declaration may not appear after executable statement in block
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[Buf]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:    ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(9): error:  #28: expression must have a constant value
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[Buf]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:                ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(10): error:  #268: declaration may not appear after executable statement in block
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 i;
+..\Protocol Analysis\SelfProtocolAnalysis.C:    ^
+..\Protocol Analysis\SelfProtocolAnalysis.C: ..\Protocol Analysis\SelfProtocolAnalysis.C: 0 warnings, 4 errors
+Target not created
+Build target 'Target 1'
+compiling SelfProtocolAnalysis.C...
+..\Protocol Analysis\SelfProtocolAnalysis.C(8): error:  #75: operand of "*" must be a pointer
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 Buf=Num*8;
+..\Protocol Analysis\SelfProtocolAnalysis.C:               ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(9): error:  #268: declaration may not appear after executable statement in block
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[Buf]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:    ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(9): error:  #28: expression must have a constant value
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 JZQ_Init[Buf]={0};
+..\Protocol Analysis\SelfProtocolAnalysis.C:                ^
+..\Protocol Analysis\SelfProtocolAnalysis.C(10): error:  #268: declaration may not appear after executable statement in block
+..\Protocol Analysis\SelfProtocolAnalysis.C:    u8 i;
+..\Protocol Analysis\SelfProtocolAnalysis.C:    ^
+..\Protocol Analysis\SelfProtocolAnalysis.C: ..\Protocol Analysis\SelfProtocolAnalysis.C: 0 warnings, 4 errors
+Target not created
+Build target 'Target 1'
+compiling SelfProtocolAnalysis.C...
+linking...
+Program Size: Code=14020 RO-data=372 RW-data=20 ZI-data=4764  
+"..\..\obj\main.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=14020 RO-data=372 RW-data=20 ZI-data=4764  
+"..\..\obj\main.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(69): error:  #268: declaration may not appear after executable statement in block
+main.c:   void Init_JZQ(void);
+main.c:   ^
+main.c(64): warning:  #177-D: variable "buf" was declared but never referenced
+main.c:   u8 buf[15]={0xfe,0xfe,0x09,0x12,0x34,0xde,0xcb,0x56}; 
+main.c:      ^
+main.c(69): error:  #67: expected a "}"
+main.c:   void Init_JZQ(void);
+main.c:   ^
+main.c(70): error:  #79: expected a type specifier
+main.c:   SPI_Flash_Read(JZQ_ADDR,G_PageTmp,2048);   //读取flash
+main.c:                  ^
+main.c(70): error:  #757: variable "G_PageTmp" is not a type name
+main.c:   SPI_Flash_Read(JZQ_ADDR,G_PageTmp,2048);   //读取flash
+main.c:                           ^
+main.c(70): error:  #79: expected a type specifier
+main.c:   SPI_Flash_Read(JZQ_ADDR,G_PageTmp,2048);   //读取flash
+main.c:                                     ^
+main.c(70): warning:  #77-D: this declaration has no storage class or type specifier
+main.c:   SPI_Flash_Read(JZQ_ADDR,G_PageTmp,2048);   //读取flash
+main.c:   ^
+main.c(70): error:  #147: declaration is incompatible with "void SPI_Flash_Read(u32, u8 *, u16)" (declared at line 77 of "..\EXT_Flash_SPI\EXT_Flash.h")
+main.c:   SPI_Flash_Read(JZQ_ADDR,G_PageTmp,2048);   //读取flash
+main.c:   ^
+main.c(71): error:  #79: expected a type specifier
+main.c:   SPI_Flash_Read(CJQ_INDEX,G_PageTmp,2048);   //读取flash
+main.c:                  ^
+main.c(71): error:  #757: variable "G_PageTmp" is not a type name
+main.c:   SPI_Flash_Read(CJQ_INDEX,G_PageTmp,2048);   //读取flash
+main.c:                            ^
+main.c(71): error:  #79: expected a type specifier
+main.c:   SPI_Flash_Read(CJQ_INDEX,G_PageTmp,2048);   //读取flash
+main.c:                                      ^
+main.c(71): warning:  #77-D: this declaration has no storage class or type specifier
+main.c:   SPI_Flash_Read(CJQ_INDEX,G_PageTmp,2048);   //读取flash
+main.c:   ^
+main.c(76): error:  #169: expected a declaration
+main.c:     while (1)
+main.c:     ^
+main.c(102): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+main.c: main.c: 4 warnings, 10 errors
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(64): warning:  #177-D: variable "buf" was declared but never referenced
+main.c:   u8 buf[15]={0xfe,0xfe,0x09,0x12,0x34,0xde,0xcb,0x56}; 
+main.c:      ^
+main.c: main.c: 1 warning, 0 errors
+linking...
+Program Size: Code=14048 RO-data=372 RW-data=20 ZI-data=4764  
+"..\..\obj\main.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=14048 RO-data=372 RW-data=20 ZI-data=4764  
+"..\..\obj\main.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\..\\obj\\main.AXF" 
+Set JLink Project File to "C:\Users\Administrator\Desktop\JZQV3.0.0\User\uvsion\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Nov 14 2012 22:34:52
+Hardware: V8.00
+S/N : 20100213 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFULL 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+linking...
+Program Size: Code=14048 RO-data=372 RW-data=20 ZI-data=4764  
+"..\..\obj\main.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\..\\obj\\main.AXF" 
+Set JLink Project File to "C:\Users\Administrator\Desktop\JZQV3.0.0\User\uvsion\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Nov 14 2012 22:34:52
+Hardware: V8.00
+S/N : 20100213 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFULL 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+compiling Computer_Concentrator_Protocol_analysis.c...
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c(39): warning:  #940-D: missing return statement at end of non-void function "Computer_Concentrator_Protocol_Analysis"
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:         }
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c:         ^
+..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c: ..\Protocol Analysis\Computer_Concentrator_Protocol_analysis.c: 1 warning, 0 errors
+linking...
+Program Size: Code=14048 RO-data=372 RW-data=20 ZI-data=4764  
+"..\..\obj\main.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\..\\obj\\main.AXF" 
+Set JLink Project File to "C:\Users\Administrator\Desktop\JZQV3.0.0\User\uvsion\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Nov 14 2012 22:34:52
+Hardware: V8.00
+S/N : 20100213 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFULL 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'Target 1'
+linking...
+Program Size: Code=14048 RO-data=372 RW-data=20 ZI-data=4764  
+"..\..\obj\main.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\..\\obj\\main.AXF" 
+Set JLink Project File to "C:\Users\Administrator\Desktop\JZQV3.0.0\User\uvsion\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled Nov 14 2012 22:34:52
+Hardware: V8.00
+S/N : 20100213 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFULL 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.274V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
