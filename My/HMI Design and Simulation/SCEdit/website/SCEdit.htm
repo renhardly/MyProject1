@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<title>RSI Simulation HMI</title>
+</head>
+<body>
+
+
+
+<div>
+<canvas id="myCanvas" width="1000" height="800">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<div id="floatingwindow" style="z-index: 9999; position: absolute ! important; left: 400px; top: 400px;border:1px solid black;">
+<h1 id="floatingwindow_head" style="left: 0px; top: 0px:" onkeypress="select_floating_window()">Floating Tool Box</h1>
+<button type="button" onclick="test()">Initial</button>
+<button type="button" onclick="drow_an_state()">State</button>
+<button type="button" onclick="drow_an_intial()">View</button>
+<img id="myImage" src="initial.png">
+<canvas id="myCanvas_amplifier" width="100" height="100" >
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+</div>
+</div>
+
+<script>
+
+class element{
+	constructor(ctx){
+	this.focus_m=false;
+	this.x=0;
+	this.y=0;
+	this.w=1;
+	this.h=1;
+	this.pickpointx=0;
+	this.pickpointy=0;
+	this.ctx=ctx;
+	this.nexts={};
+	this.previouses={};
+	this.translation_X=0;
+	this.translation_y=0;
+	this.movable=false;
+	}
+	mynext(){
+	return this.nexts;
+	}
+	getprevious(){
+	return this.previouses;
+	}	
+	is_selected(x,y){
+	false;
+	}
+	set_focus(isfocus)
+	{
+	this.focus_m=isfocus;
+	}
+	set_movable(ismovable)
+	{
+	this.movable=ismovable;
+	}
+	draw(){
+	
+	}
+	redraw(){
+		this.ctx.clear();
+		
+	}
+}
+class transition extends element{
+  constructor(x,y,ctx) {
+	super(ctx);
+    this.start_point = 
+	{
+		x_coordinate:x,
+		x_coordinate:y
+	};
+		this.first_Bezier_control_point = 
+	{
+		x_coordinate:x,
+		x_coordinate:y+80
+	};
+	    this.second_Bezier_control_point = 
+	{
+		x_coordinate:x+180,
+		x_coordinate:y+80
+	};
+	    this.end_point = 
+	{
+		x_coordinate:x+180,
+		x_coordinate:y
+	};
+	this.framepoints=[];
+	this.framepoints.push(this.start_point);
+	this.framepoints.push(this.first_Bezier_control_point);
+	this.framepoints.push(this.second_Bezier_control_point);
+	this.framepoints.push(this.end_point);
+
+  }
+  is_in_frame(x,y){
+  var Check_point = 
+	{
+		x_coordinate:x,
+		x_coordinate:y
+	};
+
+	return Is_in_polygon(Check_point);
+  }
+  is_selected(x,y){
+  
+  var tmp=Math.pow(x-this.x-this.translation_X,2)+Math.pow(y-this.y-this.translation_y,2)<=Math.pow(this.radius,2);
+  return tmp;
+  }
+  draw(){
+	this.ctx.beginPath();
+
+
+     this.ctx.moveTo(this.x, this.y = y);
+     this.ctx.quadraticCurveTo(130, 100, 230, 150);
+
+
+
+	if(this.focus_m)
+      this.ctx.lineWidth = 3;
+	  else
+	  this.ctx.lineWidth = 1;
+
+      this.ctx.strokeStyle = 'black';
+      this.ctx.stroke();
+
+}
+}
+class intial extends element{
+
+  constructor(x,y,ctx) {
+	super(ctx);
+    this.x = x;
+	this.y = y;
+	this.radius=10;
+
+	myelements.push(this);
+
+  }
+  is_selected(x,y){
+  
+  var tmp=Math.pow(x-this.x-this.translation_X,2)+Math.pow(y-this.y-this.translation_y,2)<=Math.pow(this.radius,2);
+	console.log(tmp);
+  return tmp;
+  }
+  draw(){
+	this.ctx.beginPath();
+	this.ctx.arc(this.x+this.translation_X, this.y+this.translation_y, this.radius, 0, 2 * Math.PI);
+/*
+  #    this.ctx.moveTo(170, 80);
+  #    this.ctx.bezierCurveTo(130, 100, 130, 150, 230, 150);
+  #   this.ctx.bezierCurveTo(250, 180, 320, 180, 340, 150);
+  #    this.ctx.bezierCurveTo(420, 150, 420, 120, 390, 100);
+  #    this.ctx.bezierCurveTo(430, 40, 370, 30, 340, 50);
+  #    this.ctx.bezierCurveTo(320, 5, 250, 20, 250, 50);
+  #    this.ctx.bezierCurveTo(200, 5, 150, 20, 170, 80);
+*/
+      // complete custom shape
+      this.ctx.closePath();
+	if(this.focus_m)
+      		this.ctx.fillStyle = 'LightSlateGray';
+	  else
+	  	this.ctx.fillStyle = 'NavajoWhite';
+	  
+      
+      
+      this.ctx.fill();
+      this.ctx.strokeStyle = 'blue';
+      this.ctx.stroke();
+  }
+  
+}
+class state extends element{
+
+  constructor(x,y,ctx) {
+	super(ctx);
+    this.x = x;
+	this.y = y;
+	
+	this.w = 150;
+	this.h = 100;
+	myelements.push(this);
+
+  }
+  draw(){
+	  if(this.focus_m)
+      		this.ctx.fillStyle = "LightSlateGray";
+	  else
+	 	this.ctx.fillStyle = "NavajoWhite";
+
+	this.ctx.fillRect(this.x, this.y, this.w, this.h);
+  }
+  is_selected(x,y){
+	
+	console.log(this);
+	console.log(x+'------------'+y);
+	var tmp=((this.x<=x&&(this.x+this.w)>=x)&&(this.y<=y&&this.y+this.h>=y));
+console.log(tmp);
+	return tmp;
+  }
+
+}
+
+
+var PX=100;
+var PY=100;
+var Mytrace;
+var c;
+var ctx;
+var myelements=[];
+var Isselected=false;
+window.onload = function() {
+onloadfunction();
+}
+function onloadfunction(){
+  c = document.getElementById("myCanvas");
+  var floating_w = document.getElementById("floatingwindow");
+  ctx= c.getContext("2d");
+  var img = document.getElementById("myImage");
+  Mytrace = document.getElementById("debug");
+  c.width=document.documentElement.clientWidth;
+  c.height=document.documentElement.clientHeight;
+  ctx.drawImage(img, 10, 10);
+  ctx.moveTo(0,0);
+  ctx.lineTo(PX,PY);
+  ctx.stroke();
+  let inital_p = new intial(100,100,ctx);
+
+  let state_p = new state(300,300,ctx);
+
+  let transition_test=new transition(100,100,ctx);
+
+  c.addEventListener("mouseup", onrelease, false);
+  c.addEventListener("mousemove", onDrag, false);
+  c.addEventListener("mousedown", onClick, false);
+  floating_w.addEventListener("mousedown", floatingonpressed, false);
+  floating_w.addEventListener("mousemove", floatingonmoving, false);
+  floating_w.addEventListener("mouseup", floatingonreleased, false);
+  redraw();
+}
+function redraw(){
+	ctx.clearRect(0,0,c.width,c.height);
+	for (i = 0, len = myelements.length; i < len; i++) { 
+	myelements[i].draw();
+	}
+}
+function delfocus(){
+	for (i = 0, len = myelements.length; i < len; i++) { 
+	myelements[i].set_movable(false);
+	myelements[i].focus_m=false;
+	}
+}
+
+var Difference_left;
+var Difference_top;
+function floatingonpressed(e){
+var floating_w = document.getElementById("floatingwindow");
+Difference_left=e.pageX-floating_w.style.left.substr(0,floating_w.style.left.length-2);
+Difference_top=e.pageY-floating_w.style.top.substr(0,floating_w.style.top.length-2);
+Isselected=true;
+}
+function floatingonreleased(e){
+Isselected=false;
+}
+function floatingonmoving(e){
+if(Isselected){
+var floating_w = document.getElementById("floatingwindow");
+var new_left=e.pageX-Difference_left;
+var new_top=e.pageY-Difference_top;
+floating_w.style.left=new_left+'px';
+floating_w.style.top=new_top+'px';
+	console.log("floating_w.left"+floating_w.style.left);
+	console.log("floating_w.top"+floating_w.style.top);
+}
+}
+function onrelease(e) {
+
+delfocus();
+redraw();
+console.log(myelements);
+}
+function onDrag(e) {
+	for (i = 0, len = myelements.length; i < len; i++) { 
+	if(myelements[i].movable)
+	{
+	myelements[i].x=e.pageX-this.offsetLeft-myelements[i].pickpointx;
+	myelements[i].y=e.pageY-this.offsetTop-myelements[i].pickpointy;
+	}
+	}
+}
+function onClick(e) {
+    var clickX;
+    var clickY;
+	var rect = c.getBoundingClientRect();
+
+    clickX = e.offsetX;
+    clickY = e.offsetY;
+    PX = clickX;
+    PY = clickY;
+	console.log("clike x:"+PX);
+	console.log("clike y:"+PY);
+	
+	for (i = 0, len = myelements.length; i < len; i++) { 
+	myelements[i].set_focus(myelements[i].is_selected(PX,PY));
+	if(myelements[i].focus_m){
+	myelements[i].set_movable(true);
+	myelements[i].pickpointx=PX-myelements[i].x;
+	myelements[i].pickpointy=PY-myelements[i].y;
+	}
+	
+	}
+redraw();
+console.log(myelements);
+
+}
+function test(){
+
+console.log(myelements);
+}
+function drow_an_intial(){
+let inital_p = new intial(100,100,ctx);
+redraw();
+console.log(myelements);
+}
+function drow_an_state(){
+
+ let state_p = new state(300,300,ctx);
+redraw();
+ console.log(myelements);
+}
+
+</script>
+
+</body>
+</html>

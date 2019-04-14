@@ -1,0 +1,16 @@
+body {
+  background-color: #955559;
+}
+
+button {
+color: #999999;
+border:1px solid #000000;
+}
+#floatingwindow {
+background-color: #125559;
+border:1px solid #000000;
+}
+#myCanvas {
+background-color: #225349	;
+border:1px solid #000000;
+}
